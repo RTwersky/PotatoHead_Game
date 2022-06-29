@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Head</title>
+    <link rel="icon" href="bodyParts/mrpotato2.png" type="image/ico" />
+    <link rel="stylesheet" href="potatoHead.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Potato Head</h1>
+        <h2>Create your own Potato Head</h2>
+    </div>
+
+    <div id="body">
+        <img src="bodyParts/body.png" class="center">
+    </div>
+
+    <audio id="audio" loop>
+        <source src="music/background.mp3">
+    </audio>
+
+    <audio id="pop">
+        <source src="music/pop.mp3">
+    </audio>
+
+    <audio id="boing">
+        <source src="music/boing.mp3">
+    </audio>
+
+    <div id="clear">
+        <img src="bodyParts/body.png">
+        <p>CLEAR</p>
+        <h4 id="instrClear">Click to clear and start again</h4>
+    </div>
+
+    <div id="playPause">
+        <img src="background/musicGreen.png" id="play">
+        <img src="background/musicRed.png" id="pause">
+        <h4 id="mLabel">Music</h4>
+    </div>
+
+    <div class="text">
+        <h4>Click a part to add to your Potato Head</h4>
+    </div>
+
+    <div id="trash">
+        <img src="background/trash.png">
+        <p>DELETE</p>
+        <h4 id="instrTrash"> Drag a piece to the trash to delete</h4>
+    </div>
+
+    <div id="bodyPartsMoveable"></div>
+
+    <div id="bodyParts">
+        <img src="bodyParts/eyes.png" class="features">
+        <img src="bodyParts/eyes2.png" class="features">
+        <img src="bodyParts/eyes3.png" class="features">
+        <img src="bodyParts/eyes4.png" class="features">
+        <img src="bodyParts/eyesGlasses.png" class="features">
+        <img src="bodyParts/glasses.png" class="features">
+        <img src="bodyParts/brows2.png" class="features">
+        <img src="bodyParts/leftear.png" class="features">
+        <img src="bodyParts/rightear.png" class="features">
+        <img src="bodyParts/leftear2.png" class="features">
+        <img src="bodyParts/rightear2.png" class="features">
+        <img src="bodyParts/mouth.png" class="features">
+        <img src="bodyParts/mouth2.png" class="features">
+        <img src="bodyParts/mouth3.png" class="features">
+        <img src="bodyParts/mouthMustache.png" class="features">
+        <img src="bodyParts/nose.png" class="features">
+        <img src="bodyParts/nose3.png" class="features">
+        <img src="bodyParts/nose2.png" class="features">
+        <img src="bodyParts/shoes.png" class="features">
+        <img src="bodyParts/rightHand.png" class="features">
+        <img src="bodyParts/leftHand.png" class="features">
+        <img src="bodyParts/hat.png" class="features">
+        <img src="bodyParts/hair.png" class="features">
+        <img src="bodyParts/hair2.png" class="features">
+        <img src="bodyParts/pocketBook.png" class="features">
+        <img src="bodyParts/body.png" class="features">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="potatohead.js"></script>
+</body>
+
+</html>

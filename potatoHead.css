@@ -1,0 +1,187 @@
+body {
+    background-image: url("background/backround.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    user-select: none;
+}
+
+
+
+
+
+#audio {
+    position: fixed;
+}
+
+#bodyParts {
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(190, 41, 91);
+    height: 6em;
+    color: white;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    transform: rotateX(180deg);
+}
+
+#header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px white;
+    color: rgb(190, 41, 91);
+}
+
+.features {
+    transform: rotateX(180deg);
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+#bodyParts::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+#bodyParts::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 15px;
+}
+
+#bodyParts::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.features2 {
+    position: absolute;
+}
+
+#bodyPartsMoveable {
+    margin-bottom: 12em;
+    margin-left: 50em;
+}
+
+.text {
+    width: 18em;
+    visibility: hidden;
+    color: blanchedalmond;
+    text-align: center;
+    position: fixed;
+    left: calc(50% - 9em);
+    bottom: 5em;
+}
+
+.features:hover+.text {
+    visibility: visible;
+}
+
+.features:hover {
+    background-color: rosybrown;
+}
+
+#trash {
+    height: 100px;
+    width: 80px;
+    left: 40px;
+    top: 40px;
+    position: fixed;
+    color: white;
+    text-shadow: 1px 1px black
+}
+
+#clear {
+    height: 100px;
+    width: 80px;
+    left: 42px;
+    top: 160px;
+    position: fixed;
+    color: white;
+    text-shadow: 1px 1px black
+}
+
+#trash img,
+#clear img {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    align-self: flex-end;
+}
+
+#trash p {
+    font-family: cursive;
+    position: fixed;
+    top: 100px;
+    left: 45px;
+}
+
+#instrTrash {
+    position: fixed;
+    top: 120px;
+    left: 40px;
+    visibility: hidden;
+}
+
+#clear p {
+    font-family: cursive;
+    position: fixed;
+    top: 212px;
+    left: 47px;
+}
+
+#instrClear {
+    position: fixed;
+    top: 235px;
+    left: 40px;
+    visibility: hidden;
+}
+
+#playPause {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    height: 4.2em;
+    width: 4.2em;
+
+}
+
+#trash:hover #instrTrash {
+    visibility: visible;
+}
+
+#clear:hover #instrClear {
+    visibility: visible;
+}
+
+#play,
+#pause {
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#pause {
+    visibility: hidden;
+}
+
+#mLabel {
+    position: fixed;
+    right: 6%;
+    top: 75px;
+    color: white;
+    visibility: hidden;
+}
+
+#playPause:hover #mLabel {
+    visibility: visible;
+}
